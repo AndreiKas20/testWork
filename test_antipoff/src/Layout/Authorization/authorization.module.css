@@ -1,0 +1,42 @@
+.form {
+  position: absolute;
+  left: calc(50% - 250px);
+  top: calc(50% - 350px);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  text-align: left;
+}
+
+.titleForm {
+  font-weight: 400;
+  margin-bottom: 16px;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--black17);
+}
+
+.input {
+  margin-bottom: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: var(--greyLightF8);
+  color: var(--grey85);
+}
+
+.spanText {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 136.19%;
+  color: var(--black17);
+}
+
+
+

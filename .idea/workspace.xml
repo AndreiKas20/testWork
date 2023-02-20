@@ -4,7 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa8ec821-4424-431a-8b05-537dd402bcd6" name="Changes" comment="" />
+    <list default="true" id="fa8ec821-4424-431a-8b05-537dd402bcd6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test_antipoff/config/env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/config/getHttpsConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/config/jest/babelTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/config/jest/cssTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/config/jest/fileTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/config/modules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/config/paths.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/config/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/config/webpack/persistentCache/createEnvironmentHash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/config/webpackDevServer.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/scripts/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/scripts/start.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/scripts/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/src/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/src/colors.global.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/src/main.global.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/src/store/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/src/store/tokenReducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/src/store/usersReducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/types/btnTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/setupTests.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +48,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2M0UligHQjyaGdR4oeb3aTOoRlK" />
   <component name="ProjectViewState">
@@ -29,9 +68,15 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tom\testWork\test_antipoff\src\Layout" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="eject" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/test_antipoff/package.json" />
@@ -57,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676904145291</updated>
-      <workItem from="1676904146500" duration="1178000" />
+      <workItem from="1676904146500" duration="20724000" />
     </task>
     <servers />
   </component>
