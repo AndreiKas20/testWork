@@ -6,7 +6,15 @@ import {useDispatch, useSelector} from "react-redux";
 import {getToken} from "../../store/tokenReducer";
 
 export function Authorization() {
-    const [token, setToken] = useState('')
+    const token = JSON.parse(localStorage.token)
+    useEffect(() => {
+        console.log('token APP', token)
+        if (token === 'QpwL5tke4Pnpja7X4') {
+
+        } else {
+
+        }
+    }, [localStorage, ])
     const dispatch: any = useDispatch()
     const click = (e:FormEvent) => {
         e.preventDefault()

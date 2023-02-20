@@ -11,10 +11,13 @@ function App() {
     const [checkIn, setCheckIn] = useState(false)
     const token = JSON.parse(localStorage.token)
     useEffect(() => {
+        console.log('token APP', token)
         if (token === 'QpwL5tke4Pnpja7X4') {
             setCheckIn(true)
+        } else {
+            setCheckIn(false)
         }
-    }, [token])
+    }, [localStorage, checkIn])
   return (
       <Provider store={store}>
           {
