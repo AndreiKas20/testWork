@@ -1,36 +1,32 @@
-import React, {useEffect, useLayoutEffect, useState} from 'react';
-import {Header} from "./Header";
-import {PersonsList} from "./PersonsList";
-import {useDispatch, useSelector} from "react-redux";
+import React, { useLayoutEffect, useState} from 'react';
+import {Content} from "./Content";
+import {Authorization} from "./Authorization";
+import {useGetToken} from "../hooks/useGetToken";
 import {getUsers} from "../store/usersReducer";
-import {usersArrType} from "../../types/usersType";
+import {useDispatch} from "react-redux";
+
 
 export function Layout() {
+    const [checkIn, setCheckIn] = useState(false)
+    const token = useGetToken()
     const dispatch: any = useDispatch()
-    const [isLoaded, setIsLoaded] = useState(true)
-    useEffect(() => {
-        dispatch(getUsers())
-    }, [])
-    // @ts-ignore
-    const arrUsers: usersArrType = useSelector(state => state.usersReducer.users?.data)
-    useEffect(() => {
-        if (arrUsers === undefined) {
-            console.log('undef')
-            setIsLoaded(true)
+    useLayoutEffect(() => {
+        if (token === 'QpwL5tke4Pnpja7X4') {
+            setCheckIn(true)
+            dispatch(getUsers(1))
         } else {
-            console.log('NON undef')
-            setIsLoaded(false)
+            setCheckIn(false)
         }
-        console.log('arruser',arrUsers)
-    }, [arrUsers])
+    }, [token])
     return (
         <div>
-            <Header title={'Наша команда'}
-                    text={'Это опытные специалисты, хорошо разбирающиеся во всех задачах, которые ложатся на их плечи, и умеющие находить выход из любых, даже самых сложных ситуаций. '}/>
-
             {
-                !isLoaded &&
-                <PersonsList arrPersons={arrUsers}/>
+                !checkIn &&
+                <Authorization/>
+            }
+            {
+                checkIn &&
+                <Content/>
             }
         </div>
     );

@@ -26,6 +26,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  width: 100%;
   background-color: var(--greyLightF8);
   color: var(--grey85);
 }
@@ -39,4 +40,12 @@
 }
 
 
+.blockInput {
+  position: relative;
+}
 
+.btnPositionOne {
+  position: absolute;
+  right: 0;
+  bottom: 21px;
+}

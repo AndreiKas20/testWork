@@ -5,41 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa8ec821-4424-431a-8b05-537dd402bcd6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test_antipoff/config/env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/config/getHttpsConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/config/jest/babelTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/config/jest/cssTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/config/jest/fileTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/config/modules.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/config/paths.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/config/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/config/webpack/persistentCache/createEnvironmentHash.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/config/webpackDevServer.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/scripts/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/scripts/start.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/scripts/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/src/colors.global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/src/main.global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/src/store/store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/src/store/tokenReducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/src/store/usersReducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/types/btnTypes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/src/hooks/useGetToken.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/src/hooks/useResize.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/src/store/personCardReducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/types/iconsTypes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_antipoff/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_antipoff/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Authorization/Authorization.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Authorization/Authorization.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Authorization/authorization.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Authorization/authorization.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Header/header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/Header/header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Header/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/Header/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/CardItem/CardItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/CardItem/CardItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/CardItem/carditem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/CardItem/carditem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/CardItem/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/CardItem/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/PersonPage/PersonPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonPage/PersonPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/PersonPage/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonPage/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/PersonPage/personpage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonPage/personpage.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/PersonsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/PersonsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/personslist.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/personslist.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/UI/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/UI/Button/Button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_antipoff/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/main.global.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/main.global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/store/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/store/usersReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/store/usersReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/types/btnTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/types/btnTypes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,24 +51,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Tom/testWork",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tom/testWork&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tom\testWork\test_antipoff\src\UI" />
+      <recent name="C:\Users\Tom\testWork\test_antipoff\src\Layout\Content" />
+      <recent name="C:\Users\Tom\testWork\test_antipoff\src\Layout\Content\Header" />
       <recent name="C:\Users\Tom\testWork\test_antipoff\src\Layout" />
+      <recent name="C:\Users\Tom\testWork\test_antipoff\src\Layout\Content\Authorization" />
     </key>
   </component>
   <component name="RunManager">
@@ -103,6 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676904145291</updated>
       <workItem from="1676904146500" duration="30453000" />
+      <workItem from="1676956276622" duration="50067000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,1 @@
+export type nameIcon =    'IconTel'    | 'IconMail'    | 'IconBack'    | 'IconExit'    | 'IconCloseEye'    | 'IconOpenEye'    | 'IconLikeOn'    | 'IconLikeOff'    | 'none'
