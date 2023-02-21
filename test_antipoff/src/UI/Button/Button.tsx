@@ -1,6 +1,7 @@
 import React, {FormEvent, useEffect, useState} from 'react';
 import {styleBtn} from "../../../types/btnTypes";
 import {nameIcon} from "../../../types/iconsTypes";
+import styles from './button.module.css'
 import {Icon} from "../Icon";
 
 interface IButton {
@@ -9,6 +10,7 @@ interface IButton {
     click: (event: FormEvent) => void
     icon: nameIcon
     disable?: boolean
+    arrow?:boolean
 }
 
 export function Button(props: IButton) {
@@ -24,11 +26,11 @@ export function Button(props: IButton) {
         <>
             {
                 isIcon &&
-                <button style={props.style}  onClick={props.click}><Icon nameIcon={props.icon}/></button>
+                <button style={props.style} className={styles.btn}  onClick={props.click}><Icon nameIcon={props.icon}/></button>
             }
             {
                 !isIcon &&
-                <button disabled={props.disable} onClick={props.click} style={props.style}>{props.textBtn}</button>
+                <button disabled={props.disable} className={styles.btn} onClick={props.click} style={props.style}>{props.textBtn}{props.arrow && <span className={styles.arrow}/>}</button>
             }
         </>
 

@@ -1,0 +1,1 @@
+.btn {    position: relative;}.arrow {    position: absolute;    right: calc(50% - 56px);    bottom: 13px;    width: 15px;    height: 15px;    border-bottom: 1px solid var(--black17);    border-right: 1px solid var(--black17);    transform: rotate(45deg);}

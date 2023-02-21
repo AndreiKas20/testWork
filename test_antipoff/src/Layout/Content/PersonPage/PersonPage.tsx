@@ -43,7 +43,7 @@ export function PersonPage({mail}: IProps) {
                 </p>
             </div>
             <address className={styles.contactsBlock}>
-                <a className={styles.contact} href={'+79543334455'}>
+                <a className={styles.contact} href={'tel:+79543334455'}>
                     <div style={{top: '0'}} className={styles.iconPosition}><Icon nameIcon={'IconTel'}/></div>
                     +7 (954) 333-44-55
                 </a>

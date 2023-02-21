@@ -4,6 +4,7 @@ import {Authorization} from "./Authorization";
 import {useGetToken} from "../hooks/useGetToken";
 import {getUsers} from "../store/usersReducer";
 import {useDispatch} from "react-redux";
+import {Route, Routes} from "react-router";
 
 
 export function Layout() {
@@ -26,7 +27,10 @@ export function Layout() {
             }
             {
                 checkIn &&
-                <Content/>
+                <Routes>
+                    <Route path={'*'} element={<Content/>}/>
+                </Routes>
+
             }
         </div>
     );
