@@ -13,9 +13,11 @@ interface IPersonList {
 
 export function PersonsList({arrPersons}: IPersonList) {
     const dispatch: any = useDispatch()
+    const [disabled, setDisabled] = useState(false)
     // const [pageGet, setPageGet] = useState(2)
     const addUsers = () => {
         dispatch(getUsers(2))
+        setDisabled(true)
         // setPageGet(prevState => prevState + 1)
     }
 
@@ -29,6 +31,7 @@ export function PersonsList({arrPersons}: IPersonList) {
 
             <div className={styles.btnPosition}>
                 <Button click={addUsers}
+                        disable={disabled}
                         arrow={true}
                         icon={'none'} textBtn={'Показать еще'}
                         style={{

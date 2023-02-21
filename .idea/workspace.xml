@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa8ec821-4424-431a-8b05-537dd402bcd6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonPage/PersonPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonPage/PersonPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/PersonsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/PersonsList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/personslist.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/personslist.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/UI/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/UI/Button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/UI/Button/button.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/UI/Button/button.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/main.global.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/main.global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676904145291</updated>
       <workItem from="1676904146500" duration="30453000" />
-      <workItem from="1676956276622" duration="64910000" />
+      <workItem from="1676956276622" duration="65375000" />
     </task>
     <servers />
   </component>
