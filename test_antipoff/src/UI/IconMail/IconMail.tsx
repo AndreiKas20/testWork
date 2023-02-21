@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './iconmail.module.css';
 
 export function IconMail() {
     return (

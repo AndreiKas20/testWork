@@ -1,9 +1,8 @@
 .form {
   position: absolute;
-  left: calc(50% - 250px);
-  top: calc(50% - 350px);
   padding: 16px;
   display: flex;
+  top: 20%;
   flex-direction: column;
   min-width: 500px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -48,4 +47,10 @@
   position: absolute;
   right: 0;
   bottom: 21px;
+}
+
+@media all and (max-width: 1030px) {
+  .form {
+   min-width: 375px;
+  }
 }

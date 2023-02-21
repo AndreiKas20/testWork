@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './iconlikeon.module.css';
 
 export function IconLikeOn() {
   return (

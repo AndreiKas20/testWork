@@ -77,7 +77,6 @@ export function Authorization() {
         } else {
             setIsBtnDisabled(true)
         }
-        console.log('btn status' , isBtnDisabled)
     },[touchedPasD, touchedName, touchedPas, touchedMail, nameFail, mailFail, passFail, pasDFail])
 
     return (

@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './iconlikeoff.module.css';
 
 export function IconLikeOff() {
   return (

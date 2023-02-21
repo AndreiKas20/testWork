@@ -11,7 +11,6 @@ export function PersonPage({mail}: IProps) {
     // @ts-ignore
     const cardData = useSelector(state => state.personCardReducer.card)
     useEffect(() => {
-        console.log('card data', cardData)
     }, [cardData])
     return (
         <div className={styles.container}>

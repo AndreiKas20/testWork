@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './iconback.module.css';
 
 export function IconBack() {
     return (

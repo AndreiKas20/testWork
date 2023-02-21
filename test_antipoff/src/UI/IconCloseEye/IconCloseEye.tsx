@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './iconcloseeye.module.css';
+
 
 export function IconCloseEye() {
   return (

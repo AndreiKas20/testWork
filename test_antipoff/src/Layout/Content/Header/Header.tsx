@@ -41,7 +41,6 @@ export function Header() {
             setFirsLastName('Наша команда')
             setSrcImg('https://yakovgo.gosuslugi.ru/netcat_files/257/2538/headshot.jpg')
         }
-        console.log('URL',)
     },[url])
     const deleteToken = () => {
         localStorage.token = JSON.stringify('')
@@ -78,7 +77,7 @@ export function Header() {
                     backgroundColor: 'var(--violet89)',
                     color: 'var(--greyLightF8)',
                     borderRadius: '8px',
-                    border: '1px solid var(--greyLightF8)',
+                    border: screenWidth < 1030?'': '1px solid var(--greyLightF8)',
                     padding: '8px 16px'
                 }} textBtn={'Выход'} icon={iconBtnExit} /></div>
             {
@@ -88,7 +87,7 @@ export function Header() {
                         backgroundColor: 'var(--violet89)',
                         color: 'var(--greyLightF8)',
                         borderRadius: '8px',
-                        border: 'solid 1px var(--greyLightF8)',
+                        border: screenWidth < 1030?'': '1px solid var(--greyLightF8)',
                         padding: '8px 16px'
                     }}
                             click={() => {

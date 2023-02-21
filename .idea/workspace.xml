@@ -5,35 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa8ec821-4424-431a-8b05-537dd402bcd6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test_antipoff/src/hooks/useGetToken.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/src/hooks/useResize.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/src/store/personCardReducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_antipoff/types/iconsTypes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_antipoff/types/likeTypes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Authorization/Authorization.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Authorization/Authorization.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Authorization/authorization.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Authorization/authorization.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/Header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Header/header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/Header/header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Header/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/Header/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/Header/header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/Header/header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonPage/PersonPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonPage/PersonPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/CardItem/CardItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/CardItem/CardItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/CardItem/carditem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/CardItem/carditem.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/PersonsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/PersonsList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/CardItem/CardItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/CardItem/CardItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/CardItem/carditem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/CardItem/carditem.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/CardItem/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/CardItem/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/PersonPage/PersonPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonPage/PersonPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/PersonPage/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonPage/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/PersonPage/personpage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonPage/personpage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/PersonsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/PersonsList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/PersonsList/personslist.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/personslist.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_antipoff/src/UI/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/UI/Button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/UI/Icon/Icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/UI/Icon/Icon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/UI/IconBack/IconBack.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/UI/IconBack/IconBack.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/UI/IconCloseEye/IconCloseEye.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/UI/IconCloseEye/IconCloseEye.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/UI/IconExit/IconExit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/UI/IconExit/IconExit.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/UI/IconLikeOff/IconLikeOff.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/UI/IconLikeOff/IconLikeOff.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/UI/IconLikeOn/IconLikeOn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/UI/IconLikeOn/IconLikeOn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/UI/IconMail/IconMail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/UI/IconMail/IconMail.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/UI/IconOpenEye/IconOpenEye.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/UI/IconOpenEye/IconOpenEye.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_antipoff/src/main.global.css" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/main.global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/store/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/store/usersReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/store/usersReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/types/btnTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/types/btnTypes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_antipoff/src/store/tokenReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/store/tokenReducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676904145291</updated>
       <workItem from="1676904146500" duration="30453000" />
-      <workItem from="1676956276622" duration="50067000" />
+      <workItem from="1676956276622" duration="60273000" />
     </task>
     <servers />
   </component>

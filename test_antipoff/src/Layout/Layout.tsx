@@ -19,7 +19,7 @@ export function Layout() {
         }
     }, [token])
     return (
-        <div>
+        <div style={!checkIn?{display:'flex', justifyContent: 'center'}:{}}>
             {
                 !checkIn &&
                 <Authorization/>

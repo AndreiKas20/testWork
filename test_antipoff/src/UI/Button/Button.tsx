@@ -1,5 +1,4 @@
 import React, {FormEvent, useEffect, useState} from 'react';
-import styles from './button.module.css';
 import {styleBtn} from "../../../types/btnTypes";
 import {nameIcon} from "../../../types/iconsTypes";
 import {Icon} from "../Icon";

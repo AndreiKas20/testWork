@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './carditem.module.css';
 import {userType} from "../../../../../types/usersType";
 import {Img} from "../../../../UI/Img";
@@ -12,11 +12,24 @@ interface ICard {
 }
 
 export function CardItem({card}: ICard) {
-    const dispatch:any = useDispatch()
+    const dispatch: any = useDispatch()
     const [isActive, setIsActive] = useState(false)
+    // const [arrLikes, setArrLikes] = useState([])
     const likeChange = () => {
         setIsActive(!isActive)
     }
+    useEffect(() => {
+        if (localStorage.likes === undefined) {
+            localStorage.likes = JSON.stringify([])
+        } else {
+            if (JSON.parse(localStorage.likes).indexOf(card.id) === -1) {
+                setIsActive(false)
+            } else {
+                setIsActive(true)
+            }
+        }
+    }, [])
+
     const onClickCard = () => {
         dispatch(getFullCard(card.id))
     }
@@ -27,7 +40,8 @@ export function CardItem({card}: ICard) {
                 <h4>{card.first_name} {card.last_name}</h4>
             </Link>
             <div className={styles.positionBtn}>
-                <Button textBtn={''} style={{backgroundColor: 'var(--greyLightF8)', padding: '8px', borderRadius: ''}} icon={isActive? 'IconLikeOn': 'IconLikeOff'} click={likeChange} />
+                <Button textBtn={''} style={{backgroundColor: 'var(--greyLightF8)', padding: '8px', borderRadius: ''}}
+                        icon={isActive ? 'IconLikeOn' : 'IconLikeOff'} click={likeChange}/>
             </div>
         </li>
     );

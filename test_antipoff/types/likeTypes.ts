@@ -1,0 +1,1 @@
+export type likesArr = Array<{ id: number, isLike: boolean }>

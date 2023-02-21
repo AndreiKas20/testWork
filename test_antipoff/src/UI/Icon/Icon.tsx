@@ -13,12 +13,9 @@ import {IconLikeOn} from "../IconLikeOn";
 
 interface IIcon {
     nameIcon: nameIcon
-    width?: string
-    height?: string
-    noActive?: boolean
 }
 
-export function Icon({nameIcon, height, width, noActive}: IIcon) {
+export function Icon({nameIcon}: IIcon) {
     if (nameIcon === 'IconMail') {
         return (
             <IconMail/>

@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './iconexit.module.css';
 
 export function IconExit() {
   return (

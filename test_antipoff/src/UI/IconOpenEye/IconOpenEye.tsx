@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './iconopeneye.css';
 
 export function IconOpenEye() {
   return (

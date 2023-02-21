@@ -13,10 +13,10 @@ interface IPersonList {
 
 export function PersonsList({arrPersons}: IPersonList) {
     const dispatch: any = useDispatch()
-    const [pageGet, setPageGet] = useState(2)
+    // const [pageGet, setPageGet] = useState(2)
     const addUsers = () => {
-        dispatch(getUsers(pageGet))
-        setPageGet(prevState => prevState + 1)
+        dispatch(getUsers(2))
+        // setPageGet(prevState => prevState + 1)
     }
 
     return (
