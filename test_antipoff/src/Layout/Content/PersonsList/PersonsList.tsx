@@ -1,31 +1,34 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './personslist.module.css';
-import {usersArrType} from "../../../../types/usersType";
 import {CardItem} from "./CardItem";
 import {generateRandomString} from "../../../utils/getRandomString";
 import {Button} from "../../../UI/Button";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {getUsers} from "../../../store/usersReducer";
 
-interface IPersonList {
-    arrPersons: usersArrType
-}
 
-export function PersonsList({arrPersons}: IPersonList) {
+export function PersonsList() {
+    // @ts-ignore
+    const arrUsers = useSelector(state => state.usersReducer.users)
+    const [users, setUsers] = useState([])
     const dispatch: any = useDispatch()
     const [disabled, setDisabled] = useState(false)
-    // const [pageGet, setPageGet] = useState(2)
     const addUsers = () => {
         dispatch(getUsers(2))
         setDisabled(true)
-        // setPageGet(prevState => prevState + 1)
     }
+    useEffect(() => {
+        setUsers(arrUsers)
+        if (arrUsers.length === 12) {
+            setDisabled(true)
+        }
+    },[arrUsers])
 
     return (
         <>
             <ul className={styles.list}>
                 {
-                    arrPersons.map(v => <CardItem key={generateRandomString()} card={v}/>)
+                    users.map(v => <CardItem key={generateRandomString()} card={v}/>)
                 }
             </ul>
 
