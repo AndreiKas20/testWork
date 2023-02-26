@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fa8ec821-4424-431a-8b05-537dd402bcd6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/Content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/CardItem/CardItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/CardItem/CardItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/PersonsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/Layout/Content/PersonsList/PersonsList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_antipoff/src/store/usersReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test_antipoff/src/store/usersReducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +77,10 @@
       <updated>1676904145291</updated>
       <workItem from="1676904146500" duration="30453000" />
       <workItem from="1676956276622" duration="70342000" />
-      <workItem from="1677054622442" duration="3724000" />
+      <workItem from="1677054622442" duration="3783000" />
+      <workItem from="1677066173116" duration="2191000" />
+      <workItem from="1677086549558" duration="2000" />
+      <workItem from="1677092783258" duration="551000" />
     </task>
     <servers />
   </component>
