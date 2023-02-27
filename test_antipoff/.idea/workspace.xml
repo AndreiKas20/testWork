@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cc7f94b-0eee-4740-b26a-b9d8255d1f96" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hooks/useLikes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/addedUsersReducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layout/Authorization/Authorization.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Authorization/Authorization.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layout/Authorization/authorization.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Authorization/authorization.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Layout/Content/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Content/Content.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Layout/Content/PersonsList/CardItem/CardItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Content/PersonsList/CardItem/CardItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useResize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useResize.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/usersReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/usersReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useLikes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useLikes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/addedUsersReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/addedUsersReducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +34,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Tom/les-react-reddit/M14",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,7 +52,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677404702617</updated>
-      <workItem from="1677404704818" duration="11075000" />
+      <workItem from="1677404704818" duration="11673000" />
+      <workItem from="1677482537365" duration="2468000" />
     </task>
     <servers />
   </component>

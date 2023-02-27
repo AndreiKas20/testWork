@@ -51,19 +51,19 @@ export function Authorization() {
     const changeDPuss = (e: React.ChangeEvent<HTMLInputElement>) => {
         setTouchedPasD(true)
         setTextDPuss(e.target.value)
-        if(e.target.value === textPass && e.target.value.length > 0) {
+        if (e.target.value === textPass && e.target.value.length > 0) {
             setPasDFail(false)
         } else {
             setPasDFail(true)
         }
     }
 
-    const click = (e:FormEvent) => {
+    const click = (e: FormEvent) => {
         e.preventDefault()
         dispatch(getToken())
     }
 
-    const visibleClick = (e:FormEvent) => {
+    const visibleClick = (e: FormEvent) => {
         e.preventDefault()
         setIsVisiblePas(!isVisiblePass)
     }
@@ -72,31 +72,51 @@ export function Authorization() {
         setIsVisiblePasD(!isVisiblePassD)
     }
     useEffect(() => {
-        if (touchedMail && touchedPas && touchedName && touchedPasD && !pasDFail && !passFail && !nameFail && !mailFail ) {
+        if (touchedMail && touchedPas && touchedName && touchedPasD && !pasDFail && !passFail && !nameFail && !mailFail) {
             setIsBtnDisabled(false)
         } else {
             setIsBtnDisabled(true)
         }
-    },[touchedPasD, touchedName, touchedPas, touchedMail, nameFail, mailFail, passFail, pasDFail])
+    }, [touchedPasD, touchedName, touchedPas, touchedMail, nameFail, mailFail, passFail, pasDFail])
 
     return (
         <form className={styles.form}>
             <h2 className={styles.titleForm}>Регистрация</h2>
-            <span  className={styles.spanText}>Имя</span>
-            <input type={'name'} onBlur={e => changeName(e)} style={nameFail? {border: '1px solid var(--red61)'} : {}} onChange={e => changeName(e)} value={textName} className={styles.input}/>
-            <span className={styles.spanText}>Электронная почта</span>
-            <input type={"email"} onBlur={e => changeMail(e)} style={mailFail? {border: '1px solid var(--red61)'} : {}} onChange={e => changeMail(e)} value={textMail} className={styles.input}/>
-            <span  className={styles.spanText}>Пароль</span>
+            <span className={styles.spanText}>Имя</span>
             <div className={styles.blockInput}>
-                <input type={!isVisiblePass? 'password' : 'text'} onBlur={e => changePass(e)} style={passFail? {border: '1px solid var(--red61)'} : {}} onChange={e => changePass(e)} value={textPass} className={styles.input}/>
-                <div className={styles.btnPositionOne}><Button textBtn={''} style={{}} icon={isVisiblePass? 'IconOpenEye' : 'IconCloseEye'} click={visibleClick}/></div>
+                <input type={'name'} onBlur={e => changeName(e)}
+                       style={nameFail ? {border: '1px solid var(--red61)'} : {}} onChange={e => changeName(e)}
+                       value={textName} className={styles.input}/>
+                {nameFail && <span className={styles.failText}>Ошибка в имени</span>}
+            </div>
+            <span className={styles.spanText}>Электронная почта</span>
+            <div className={styles.blockInput}>
+                <input type={"email"} onBlur={e => changeMail(e)}
+                       style={mailFail ? {border: '1px solid var(--red61)'} : {}} onChange={e => changeMail(e)}
+                       value={textMail} className={styles.input}/>
+                {mailFail && <span className={styles.failText}>Ошибка в электронной почте</span>}
+            </div>
+            <span className={styles.spanText}>Пароль</span>
+            <div className={styles.blockInput}>
+                <input type={!isVisiblePass ? 'password' : 'text'} onBlur={e => changePass(e)}
+                       style={passFail ? {border: '1px solid var(--red61)'} : {}} onChange={e => changePass(e)}
+                       value={textPass} className={styles.input}/>
+                <div className={styles.btnPositionOne}><Button textBtn={''} style={{}}
+                                                               icon={isVisiblePass ? 'IconOpenEye' : 'IconCloseEye'}
+                                                               click={visibleClick}/></div>
+                {passFail && <span className={styles.failText}>Ошибка в пароле</span>}
             </div>
             <span className={styles.spanText}>Подтвердите пароль</span>
             <div className={styles.blockInput}>
-                <input type={!isVisiblePassD? 'password' : 'text'} onBlur={e => changeDPuss(e)} style={pasDFail? {border: '1px solid var(--red61)'} : {}} onChange={e => changeDPuss(e)} value={textDPuss} className={styles.input}/>
-                <div className={styles.btnPositionOne}><Button textBtn={''} style={{}} icon={isVisiblePassD? 'IconOpenEye' : 'IconCloseEye'} click={visibleDClick}/></div>
+                <input type={!isVisiblePassD ? 'password' : 'text'} onBlur={e => changeDPuss(e)}
+                       style={pasDFail ? {border: '1px solid var(--red61)'} : {}} onChange={e => changeDPuss(e)}
+                       value={textDPuss} className={styles.input}/>
+                <div className={styles.btnPositionOne}><Button textBtn={''} style={{}}
+                                                               icon={isVisiblePassD ? 'IconOpenEye' : 'IconCloseEye'}
+                                                               click={visibleDClick}/></div>
+                {pasDFail && <span className={styles.failText}>Пароли не совпадают</span>}
             </div>
-            <Button disable={isBtnDisabled} icon={'none'} click={click}  style={{
+            <Button disable={isBtnDisabled} icon={'none'} click={click} style={{
                 backgroundColor: 'var(--violet89)',
                 color: 'var(--fullWhite)',
                 padding: '13px',
