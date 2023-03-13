@@ -1,28 +1,28 @@
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import styles from './carditem.module.css';
 import {userType} from "../../../../../types/usersType";
 import {Img} from "../../../../UI/Img";
 import {Link} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import {getFullCard} from "../../../../store/personCardReducer";
-import {Button} from "../../../../UI/Button";
-import {likesArr} from "../../../../../types/likeTypes";
+
 import {useLikes} from "../../../../hooks/useLikes";
+import Button from "../../../../UI/Button/Button";
 
 interface ICard {
     card: userType
 }
 
-export function CardItem({card}: ICard) {
+export default React.memo(function CardItem({card}: ICard) {
     const dispatch: any = useDispatch()
     const [idState, setIdState] = useState(-1)
     const [isActive, setIsActive] = useState(false)
-    const arrStateButtons =  useLikes(isActive, idState)
+    const arrStateButtons = useLikes(isActive, idState)
     const [stateBtn] = arrStateButtons.filter(value => value.id === card.id)
-    const likeChange = () => {
+    const likeChange = useCallback(() => {
         setIdState(card.id)
         setIsActive(!isActive)
-    }
+    },[card.id, isActive])
     const onClickCard = () => {
         dispatch(getFullCard(card.id))
     }
@@ -38,4 +38,4 @@ export function CardItem({card}: ICard) {
             </div>
         </li>
     );
-}
+})

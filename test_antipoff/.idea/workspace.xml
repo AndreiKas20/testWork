@@ -6,12 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="7cc7f94b-0eee-4740-b26a-b9d8255d1f96" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Layout/Authorization/Authorization.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Authorization/Authorization.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Layout/Authorization/authorization.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Authorization/authorization.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Layout/Content/Content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Content/Content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layout/Content/Header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Content/Header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layout/Content/PersonPage/PersonPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Content/PersonPage/PersonPage.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Layout/Content/PersonsList/CardItem/CardItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Content/PersonsList/CardItem/CardItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useLikes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useLikes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/addedUsersReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/addedUsersReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layout/Content/PersonsList/PersonsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Content/PersonsList/PersonsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layout/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/Button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/Button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useGetToken.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useGetToken.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +39,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Tom/les-react-reddit/M14",
+    "last_opened_file_path": "C:/Users/Andrey/testWork/test_antipoff",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -54,6 +59,9 @@
       <updated>1677404702617</updated>
       <workItem from="1677404704818" duration="11673000" />
       <workItem from="1677482537365" duration="2468000" />
+      <workItem from="1677661179796" duration="223000" />
+      <workItem from="1678697915950" duration="5265000" />
+      <workItem from="1678706335096" duration="2995000" />
     </task>
     <servers />
   </component>

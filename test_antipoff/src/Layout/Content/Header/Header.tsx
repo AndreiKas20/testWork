@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import styles from './header.module.css';
-import {Button} from "../../../UI/Button";
+
 import {useDispatch, useSelector} from "react-redux";
 import {changeTokenAction} from "../../../store/tokenReducer";
 import {clearUsersAction} from "../../../store/usersReducer";
@@ -8,6 +8,7 @@ import {Img} from "../../../UI/Img";
 import {nameIcon} from "../../../../types/iconsTypes";
 import {useResize} from "../../../hooks/useResize";
 import {getFullCard} from "../../../store/personCardReducer";
+import Button from "../../../UI/Button/Button";
 
 export function Header() {
     const [styleHeader, setStyleHeader] = useState({})
@@ -42,11 +43,14 @@ export function Header() {
             setSrcImg('https://yakovgo.gosuslugi.ru/netcat_files/257/2538/headshot.jpg')
         }
     },[url])
-    const deleteToken = () => {
+    const deleteToken = useCallback(() => {
         localStorage.token = JSON.stringify('')
         dispatch(changeTokenAction(''))
         dispatch(clearUsersAction())
-    }
+    },[])
+    const back = useCallback(() => {
+        window.history.back()
+    },[])
     useEffect(() => {
         if (screenWidth < 1030) {
             setStyleHeader({justifyContent: 'flex-start', alignItems: 'center', flexDirection: 'column-revers'})
@@ -68,7 +72,7 @@ export function Header() {
                                                          height={'187px'}></Img></div>
             }
             <div style={isCard? styleText : {} } className={styles.blockTextPosition}>
-                <h1 onClick={deleteToken} className={styles.title}>{firstLastName}</h1>
+                <h1 className={styles.title}>{firstLastName}</h1>
                 <p className={styles.text}>{titleText}</p>
             </div>
             <div className={styles.btnPosition}><Button
@@ -90,9 +94,7 @@ export function Header() {
                         border: screenWidth < 1030?'': '1px solid var(--greyLightF8)',
                         padding: '8px 16px'
                     }}
-                            click={() => {
-                                window.history.back()
-                            }}
+                            click={back}
                     />
                 </div>
             }

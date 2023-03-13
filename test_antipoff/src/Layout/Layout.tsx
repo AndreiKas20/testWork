@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState} from 'react';
+import React, {useLayoutEffect, useState} from 'react';
 import {Content} from "./Content";
 import {Authorization} from "./Authorization";
 import {useGetToken} from "../hooks/useGetToken";
@@ -7,12 +7,12 @@ import {useDispatch} from "react-redux";
 import {Route, Routes} from "react-router";
 
 
-export function Layout() {
+export default React.memo(function Layout() {
     const [checkIn, setCheckIn] = useState(false)
     const token = useGetToken()
     const dispatch: any = useDispatch()
     useLayoutEffect(() => {
-        if (token === 'QpwL5tke4Pnpja7X4') {
+        if (token) {
             setCheckIn(true)
             dispatch(getUsers(1))
         } else {
@@ -34,4 +34,4 @@ export function Layout() {
             }
         </div>
     );
-}
+})

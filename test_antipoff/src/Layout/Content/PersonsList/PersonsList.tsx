@@ -1,16 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import styles from './personslist.module.css';
-import {CardItem} from "./CardItem";
-import {generateRandomString} from "../../../utils/getRandomString";
-import {Button} from "../../../UI/Button";
 import {useDispatch, useSelector} from "react-redux";
 import {getUsers} from "../../../store/usersReducer";
+import CardItem from "./CardItem/CardItem";
+import Button from "../../../UI/Button/Button";
+import {usersArrType} from "../../../../types/usersType";
 
 
-export function PersonsList() {
+export default React.memo(function PersonsList() {
     // @ts-ignore
     const arrUsers = useSelector(state => state.usersReducer.users)
-    const [users, setUsers] = useState([])
+    const [users, setUsers] = useState<usersArrType>([])
     const dispatch: any = useDispatch()
     const [disabled, setDisabled] = useState(false)
     const addUsers = () => {
@@ -28,7 +28,7 @@ export function PersonsList() {
         <>
             <ul className={styles.list}>
                 {
-                    users.map(v => <CardItem key={generateRandomString()} card={v}/>)
+                    users.map(v => <CardItem key={v.id} card={v}/>)
                 }
             </ul>
 
@@ -48,4 +48,4 @@ export function PersonsList() {
             </div>
         </>
     );
-}
+})

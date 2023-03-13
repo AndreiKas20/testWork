@@ -13,7 +13,7 @@ interface IButton {
     arrow?:boolean
 }
 
-export function Button(props: IButton) {
+export default React.memo(function Button(props: IButton) {
     const [isIcon, setIsIcon] = useState(false)
     useEffect(() => {
         if (props.icon === 'none') {
@@ -33,6 +33,5 @@ export function Button(props: IButton) {
                 <button disabled={props.disable} className={styles.btn} onClick={props.click} style={props.style}>{props.textBtn}{props.arrow && <span className={styles.arrow}/>}</button>
             }
         </>
-
     );
-}
+})

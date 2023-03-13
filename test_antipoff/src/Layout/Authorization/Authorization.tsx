@@ -1,8 +1,9 @@
-import React, {FormEvent, useEffect, useState} from 'react';
+import React, {FormEvent, useCallback, useEffect, useState} from 'react';
 import styles from './authorization.module.css';
-import {Button} from "../../UI/Button";
+
 import {useDispatch} from "react-redux";
 import {getToken} from "../../store/tokenReducer";
+import Button from "../../UI/Button/Button";
 
 export function Authorization() {
     const [textName, setTextName] = useState('')
@@ -21,7 +22,7 @@ export function Authorization() {
     const [isVisiblePassD, setIsVisiblePasD] = useState(false)
     const [isBtnDisabled, setIsBtnDisabled] = useState(true)
     const dispatch: any = useDispatch()
-    const changeName = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const changeName = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
         setTouchedName(true)
         setTextName(e.target.value)
         if (e.target.value.length > 2 && /^[a-zA-Z0-9А-Яа-я]+$/.test(e.target.value)) {
@@ -29,8 +30,8 @@ export function Authorization() {
         } else {
             setNameFail(true)
         }
-    }
-    const changeMail = (e: React.ChangeEvent<HTMLInputElement>) => {
+    },[])
+    const changeMail = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
         setTouchedMail(true)
         setTextMail(e.target.value)
         if (e.target.value.length > 2 && /^[\w]{1}[\w-\.]*@[\w-]+\.[a-z]{2,4}$/i.test(e.target.value)) {
@@ -38,8 +39,8 @@ export function Authorization() {
         } else {
             setMailFail(true)
         }
-    }
-    const changePass = (e: React.ChangeEvent<HTMLInputElement>) => {
+    },[])
+    const changePass = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
         setTouchedPas(true)
         setTextPass(e.target.value)
         if (/^(?=.*[0-9])(?=.*[!@#$%^&*?])[a-zA-Z0-9!@#$%^&*?]{6,16}$/.test(e.target.value)) {
@@ -47,8 +48,8 @@ export function Authorization() {
         } else {
             setPassFail(true)
         }
-    }
-    const changeDPuss = (e: React.ChangeEvent<HTMLInputElement>) => {
+    },[])
+    const changeDPuss = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
         setTouchedPasD(true)
         setTextDPuss(e.target.value)
         if (e.target.value === textPass && e.target.value.length > 0) {
@@ -56,21 +57,21 @@ export function Authorization() {
         } else {
             setPasDFail(true)
         }
-    }
+    },[textPass])
 
-    const click = (e: FormEvent) => {
+    const click = useCallback((e: FormEvent) => {
         e.preventDefault()
         dispatch(getToken())
-    }
+    },[dispatch])
 
-    const visibleClick = (e: FormEvent) => {
+    const visibleClick = useCallback((e: FormEvent) => {
         e.preventDefault()
         setIsVisiblePas(!isVisiblePass)
-    }
-    const visibleDClick = (e: FormEvent) => {
+    },[isVisiblePass])
+    const visibleDClick = useCallback((e: FormEvent) => {
         e.preventDefault()
         setIsVisiblePasD(!isVisiblePassD)
-    }
+    },[isVisiblePassD])
     useEffect(() => {
         if (touchedMail && touchedPas && touchedName && touchedPasD && !pasDFail && !passFail && !nameFail && !mailFail) {
             setIsBtnDisabled(false)

@@ -1,17 +1,13 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import styles from './personpage.module.css';
-import {useSelector} from "react-redux";
+
 import {Icon} from "../../../UI/Icon";
 
 interface IProps {
     mail: string
 }
 
-export function PersonPage({mail}: IProps) {
-    // @ts-ignore
-    const cardData = useSelector(state => state.personCardReducer.card)
-    useEffect(() => {
-    }, [cardData])
+export default React.memo(function PersonPage({mail}: IProps) {
     return (
         <div className={styles.container}>
             <div className={styles.blockText}>
@@ -54,4 +50,4 @@ export function PersonPage({mail}: IProps) {
             </address>
         </div>
     );
-}
+})
